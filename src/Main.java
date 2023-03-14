@@ -53,6 +53,9 @@ public class Main {
                         showTheWeather(longitude, latitude, cityName);
                         break;
                     }
+                    if (j == 959 && !cityName.toLowerCase().contains(city)){
+                        System.out.println("Hittade ingen matchande stad");
+                    }
                 }
             }
         }
