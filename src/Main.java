@@ -15,10 +15,10 @@ public class Main {
         Scanner input = new Scanner(System.in);
         String city = input.nextLine().toLowerCase();
         input.close();
-        findCityKey(city);
+        findCityCoordinates(city);
     }
 
-    static void findCityKey(String city) throws IOException, ParseException {
+    static void findCityCoordinates(String city) throws IOException, ParseException {
         URL url = new URL("https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/1.json");
 
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
